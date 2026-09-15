@@ -3,7 +3,15 @@ name: 🚀 Tarea de Despliegue
 on:
    push:
      branches:
+<<<<<<< HEAD
        
+=======
+<<<<<<< HEAD
+      
+=======
+       
+>>>>>>> ed3172daa69f4f2f0e22ad12ec874138dda54dff
+>>>>>>> 6b6f8c4426c16b37d5c4c8978260d2c4e49ece8e
 
 jobs:
   deploy:
@@ -17,10 +25,17 @@ jobs:
       - name: 📂 Sincronizando archivos via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ${{ secrets.FTP_URL }} # Change if using another host
+<<<<<<< HEAD
+          server: ${{ secrets.FTP_RUTA }} # Change if using another host
           username: ${{ secrets.FTP_USUARIO }}
           password: ${{ secrets.FTP_CLAVE }}
           server-dir: ${{ secrets.FTP_CARPETA }} # Replace with your correct path
+=======
+          server: ftp-yeison.alwaysdata # Change if using another host
+          username: yeison
+          password: clase1234
+          server-dir: www/ # Replace with your correct path
+>>>>>>> ed3172daa69f4f2f0e22ad12ec874138dda54dff
           protocol: ftps
           timeout: 86400000
           log-level: standard
